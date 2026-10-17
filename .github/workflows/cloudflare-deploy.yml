@@ -141,8 +141,7 @@ jobs:
           append_var WATCH_ROOM_EXTERNAL_SERVER_URL "${{ secrets.WATCH_ROOM_EXTERNAL_SERVER_URL }}"
           append_var WATCH_ROOM_SERVER_TYPE "${{ secrets.WATCH_ROOM_SERVER_TYPE }}"
           
-          echo "Updated wrangler.toml:"
-          cat wrangler.toml
+        
 
       - name: Build for Cloudflare
         run: pnpm run build:cloudflare
